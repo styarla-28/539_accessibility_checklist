@@ -16,7 +16,7 @@ header {
     margin: 0;
 }
 
-header h2{
+header h2 {
     font-family: "Smooch Sans";
 }
 
@@ -79,7 +79,7 @@ h1 {
 .sticky-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap: 30px;
     align-items: center;
 }
 
@@ -100,6 +100,10 @@ h1 {
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
+p{
+    font-size: 0.95em;
+}
+
 .sticky-note p {
     font-size: 0.85em;
     color: #333;
@@ -108,10 +112,16 @@ h1 {
 
 .sticky-note:nth-child(2n+1) {
     background-color: #fad6ff;
+    transform: rotate(-2deg);
 }
 
 .sticky-note:nth-child(2n) {
     background-color: #d6eaff;
+    transform: rotate(1deg);
+}
+
+.sticky-note:hover {
+    transform: translateY(-5px) rotate(0deg) !important;
 }
 
 @media screen and (min-width: 1000px) {
