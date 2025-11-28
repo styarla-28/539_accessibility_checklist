@@ -20,20 +20,64 @@
             <div class="skip"><a href="#overview">Skip to Main Content</a></div>
         </div>
         <nav>
-            <ul>
+            <ul class="nav-class">
                 <li><a href="index.html" class="active">Home</a></li>
-                <li><a href="checkList.html">Check List</a></li>
-                <li><a href="basics.html">WCAG Basics</a></li>
-                <li class="active"><a href="contact.html">Contact Us!</a></li>
+                <li><a href="checkList.html">Checklist</a></li>
+                <li><a href="basics.html">WCAG</a></li>
+                <li class="active"><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
     <main>
-        <section>
-            <h1>The Ultimate Accessiblity Tool!</h1>
-        </section>
+        <h1>Keep track of your website's Accessiblity</h1>
+        <div class="container">
+            <nav class="nav-tabs">
+                <button class="nav-tab active" data-tab="food">Color</button>
+                <button class="nav-tab" data-tab="places">Text and Links</button>
+                <button class="nav-tab" data-tab="me">Readibility</button>
+            </nav>
+
+            <div class="content">
+                <div class="tab-content" id="food-content">
+                    <div class="sticky-wrapper">
+                        <div class="sticky-note">
+                            <p>These guidelines are provided </p>
+                        </div>
+                        <div class="sticky-note">
+                            <p>These guidelines are provided </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content hidden" id="places-content">
+                    <div class="sticky-wrapper">
+                        <div class="sticky-note">
+                            <p>These guidelines are provided </p>
+                        </div>
+                        <div class="sticky-note">
+                            <p>These guidelines are provided </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tab-content hidden" id="me-content">
+                    <div class="sticky-wrapper">
+                        <div class="sticky-note">
+                            <p>These guidelines are provided </p>
+                        </div>
+                        <div class="sticky-note">
+                            <p>These guidelines are provided </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
     </main>
     <footer></footer>
+
+    <script src="js/bgcolor.js"></script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
