@@ -30,7 +30,10 @@
     </header>
     <main>
         <section id="overview" class="hero-section">
-            <h1>The Ultimate Accessiblity Checklist!</h1>
+            <div class="hero-centered">
+                <h1>Welcome to SimpleWeb!</h1>
+                <p>The Ultimate Web Accessibility Tool</p>
+            </div>
         </section>
             <section>
                 <div class="sticky-wrapper">
@@ -46,10 +49,17 @@
                 </div>
             </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <p>  <a href="https://www.w3.org/TR/WCAG22/" target="_blank">WCAG
+                Website</a> | SimpleWeb by Shrina Tyarla </p>
 
+            <p>© Copyrights <span id="year"></span></p>
+        </div>
+    </footer>
     <script src="js/bgcolor.js"></script>
-     <script src="js/script.js"></script>
+    <script src="js/script.js"></script>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 
 </html>

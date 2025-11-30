@@ -33,9 +33,17 @@
             <h1>The Ultimate Accessiblity Tool!</h1>
         </section>
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <p>  <a href="https://www.w3.org/TR/WCAG22/" target="_blank">WCAG
+                Website</a> | SimpleWeb by Shrina Tyarla </p>
+
+            <p>© Copyrights <span id="year"></span></p>
+        </div>
+    </footer>
     <script src="js/bgcolor.js"></script>
     <script src="js/script.js"></script>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 
 </html>

@@ -29,16 +29,30 @@
         </nav>
     </header>
     <main>
-        <h1>Keep track of your website's Accessiblity</h1>
+        <section class="other-section" id="overview">
+            <div class="hero-centered">
+                <h1>Keep track of your website's Accessiblity</h1>
+            </div>
+        </section>
         <div class="container">
-            <nav class="nav-tabs">
+            <div class="nav-tabs">
                 <button class="nav-tab active" data-tab="food">Color</button>
                 <button class="nav-tab" data-tab="places">Text and Links</button>
                 <button class="nav-tab" data-tab="me">Readibility</button>
-            </nav>
+            </div>
 
             <div class="content">
                 <div class="tab-content" id="food-content">
+                    <div>
+                        <h2>1.4.1 Using Color to Convey Meaning</h2><br>
+                        <details>
+                            <summary>
+                                Learn More about this Rule
+                            </summary>
+                            <p>Color is not used as the only visual means of conveying information, indicating an
+                                action, prompting a response, or distinguishing a visual element.</p>
+                        </details><br>
+                    </div>
                     <div class="sticky-wrapper">
                         <div class="sticky-note">
                             <p>These guidelines are provided </p>
@@ -74,10 +88,17 @@
         </div>
         </div>
     </main>
-    <footer></footer>
+    <footer>
+        <div>
+            <p> <a href="https://www.w3.org/TR/WCAG22/" target="_blank">WCAG
+                    Website</a> | SimpleWeb by Shrina Tyarla </p>
 
+            <p>© Copyrights <span id="year"></span></p>
+        </div>
+    </footer>
     <script src="js/bgcolor.js"></script>
     <script src="js/script.js"></script>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 
 </html>

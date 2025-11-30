@@ -33,13 +33,22 @@
             <h1>Learn about WCAG 2.2</h1>
         </section>
         <section>
-            <p>WCAG 2.2 stands for <strong>Web Content Accessibility Guidelines version 2.2</strong>. These rules help make websites
+            <p>WCAG 2.2 stands for <strong>Web Content Accessibility Guidelines version 2.2</strong>. These rules help
+                make websites
                 usable for everyone—including people with disabilities.</p>
         </section>
     </main>
-    <footer></footer>
-     <script src="js/bgcolor.js"></script>
-     <script src="js/script.js"></script>
+    <footer>
+        <div>
+            <p>  <a href="https://www.w3.org/TR/WCAG22/" target="_blank">WCAG
+                Website</a> | SimpleWeb by Shrina Tyarla </p>
+
+            <p>© Copyrights <span id="year"></span></p>
+        </div>
+    </footer>
+    <script src="js/bgcolor.js"></script>
+    <script src="js/script.js"></script>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 
 </html>

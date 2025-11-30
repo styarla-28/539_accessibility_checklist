@@ -34,11 +34,25 @@ section {
     animation: fadeInUp 1s ease;
 }
 
+.other-section {
+    min-height: 60vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.hero-centered h1 {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
 .hero-centered p {
     font-size: 1.25rem;
-    max-width: 600px;
     margin-bottom: 30px;
-    opacity: 0.95;
+    text-align: center;
     animation: fadeInUp 1s ease 0.2s backwards;
 }
 
@@ -251,6 +265,55 @@ p {
     display: none;
 }
 
+footer {
+    /*styling from UMSI website*/
+    text-align: center;
+    background-color: #e0e0e0;
+    font-size: 16px;
+    line-height: 24px;
+    padding: 3em 0;
+}
+
+footer h3 {
+    font-size: 14px;
+}
+
+footer a {
+    text-decoration: none;
+    color: #001834;
+    font-weight: bold;
+}
+
+details {
+    margin-bottom: 10px;
+    border: 1px solid #8e8e8e;
+    border-radius: 5px;
+}
+
+summary {
+    padding: 15px;
+    border: 1px solid #999;
+    cursor: pointer;
+    font-weight: bold;
+    list-style: none;
+    /* Removes default arrow in some browsers */
+}
+
+summary::marker {
+    /* For browsers that still show the default marker */
+    display: none;
+}
+
+details[open] summary {
+    background-color: #e0e0e0;
+    color: #000;
+}
+
+details p {
+    padding: 10px 15px;
+    border-top: 1px solid #eee;
+}
+
 
 @media screen and (min-width: 1000px) {
     header {
@@ -263,5 +326,13 @@ p {
 
     .nav-class {
         margin: 0 30%;
+    }
+
+    footer ul {
+        justify-content: center;
+    }
+
+    footer li {
+        text-align: center;
     }
 }
