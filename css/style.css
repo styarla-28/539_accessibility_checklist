@@ -144,8 +144,8 @@ h1 {
 }
 
 .sticky-note {
+    min-height: 200px;
     background: #999;
-    min-height: 150px;
     padding: 20px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -354,9 +354,10 @@ details li {
 }
 
 .other-centered {
+    align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 45px;
+    gap: 30px;
 }
 
 .other-centered h1 {
@@ -365,6 +366,13 @@ details li {
     margin-bottom: 20px;
     animation: fadeInUp 1s ease;
 }
+
+.sticky-note ul{
+    text-align: left;
+    list-style: none;
+    margin-bottom: 10px;
+}
+
 
 .other-centered p {
     font-size: 1rem;
@@ -411,6 +419,7 @@ details li {
     }
 
     .other-centered {
+        align-items: center;
         flex-direction: row;
     }
 
@@ -420,6 +429,10 @@ details li {
 
     .nav-tab {
         font-size: 1.3rem;
+    }
+
+    .other-element{
+        width: 60%;
     }
 
 }
