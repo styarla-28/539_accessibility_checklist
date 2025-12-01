@@ -13,6 +13,13 @@ header h2 {
     font-family: "Smooch Sans";
 }
 
+aside {
+    padding-left: 15px;
+    margin-left: 15px;
+    margin-bottom: 30px;
+    float: none;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -154,8 +161,13 @@ p {
 }
 
 h2 {
-    font-size: 26px;
+    font-size: 20px;
     font-weight: 500;
+}
+
+h3{
+    padding:10px;
+    font-size:18px;
 }
 
 .sticky-note p {
@@ -274,8 +286,6 @@ h2 {
 }
 
 footer {
-    /*styling from UMSI website*/
-    text-align: center;
     background-color: #e0e0e0;
     font-size: 16px;
     line-height: 24px;
@@ -292,8 +302,11 @@ footer a {
     font-weight: bold;
 }
 
+footer p {
+    text-align: center;
+}
+
 details {
-    margin-bottom: 10px;
     border: 1px solid #8e8e8e;
     border-radius: 5px;
 }
@@ -326,11 +339,25 @@ details p {
     display: flex;
     flex-direction: column;
     align-items: stretch;
+    flex-wrap: wrap;
+}
+
+details ul {
+    list-style: none;
+    padding: 15px;
+    font-weight: 200;
+    margin-bottom: 10px;
+}
+
+details li{
+    font-weight: 200;
+    margin-bottom: 10px;
 }
 
 .other-centered {
     display: flex;
     flex-direction: column;
+    gap: 45px;
 }
 
 .other-centered h1 {
@@ -367,9 +394,15 @@ details p {
         text-align: center;
     }
 
+    aside {
+        float: right;
+    }
+
     .tab-element {
         flex-direction: row;
-        justify-content: space-evenly;
+        justify-content: space-between;
+        align-items: baseline;
+        flex-wrap: wrap;
     }
 
     .other-centered {
@@ -380,5 +413,8 @@ details p {
         text-align: left;
     }
 
+    .nav-tab {
+        font-size: 1.3rem;
+    }
 
 }
