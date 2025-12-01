@@ -372,6 +372,12 @@ details li {
     animation: fadeInUp 1s ease 0.2s backwards;
 }
 
+.highlighted-text{
+    background-color: #fdff32;
+    padding: 8px;
+    font-style: oblique;
+}
+
 @media screen and (min-width: 1000px) {
     header {
         flex-direction: row;
@@ -415,12 +421,5 @@ details li {
     .nav-tab {
         font-size: 1.3rem;
     }
-
-    /* .active{
-        display: flex;
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        gap: 15px;
-    } */
 
 }
