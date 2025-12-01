@@ -114,7 +114,6 @@ h1 {
     font-size: 28px;
     line-height: normal;
     font-weight: 400;
-    padding: 10px;
 }
 
 .skip a {
@@ -139,7 +138,7 @@ h1 {
 
 .sticky-note {
     background: #999;
-    min-height: 200px;
+    min-height: 150px;
     padding: 20px;
     box-shadow: 3px 3px 8px rgba(0, 0, 0, 0.2);
     position: relative;
@@ -149,12 +148,21 @@ h1 {
 
 p {
     font-size: 0.95em;
+    font-weight: 100px;
+    text-align: left;
+    line-height: 1.5rem;
+}
+
+h2 {
+    font-size: 26px;
+    font-weight: 500;
 }
 
 .sticky-note p {
     font-size: 0.85em;
     color: #333;
     line-height: 1.6;
+    text-align: left;
 }
 
 .sticky-note:nth-child(2n+1) {
@@ -314,6 +322,29 @@ details p {
     border-top: 1px solid #eee;
 }
 
+.tab-element {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.other-centered {
+    display: flex;
+    flex-direction: column;
+}
+
+.other-centered h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    margin-bottom: 20px;
+    animation: fadeInUp 1s ease;
+}
+
+.other-centered p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    animation: fadeInUp 1s ease 0.2s backwards;
+}
 
 @media screen and (min-width: 1000px) {
     header {
@@ -335,4 +366,19 @@ details p {
     footer li {
         text-align: center;
     }
+
+    .tab-element {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .other-centered {
+        flex-direction: row;
+    }
+
+    .other-centered h1 {
+        text-align: left;
+    }
+
+
 }
