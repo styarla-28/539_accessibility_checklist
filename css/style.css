@@ -14,9 +14,9 @@ header h2 {
 }
 
 aside {
+    margin: 10px;
     padding-left: 15px;
     margin-left: 15px;
-    margin-bottom: 30px;
     float: none;
 }
 
@@ -27,7 +27,7 @@ section {
 }
 
 .hero-section {
-    min-height: 75vh;
+    max-height: 200vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -165,9 +165,9 @@ h2 {
     font-weight: 500;
 }
 
-h3{
-    padding:10px;
-    font-size:18px;
+h3 {
+    padding: 10px;
+    font-size: 18px;
 }
 
 .sticky-note p {
@@ -313,7 +313,6 @@ details {
 
 summary {
     padding: 15px;
-    border: 1px solid #999;
     cursor: pointer;
     font-weight: bold;
     list-style: none;
@@ -349,7 +348,7 @@ details ul {
     margin-bottom: 10px;
 }
 
-details li{
+details li {
     font-weight: 200;
     margin-bottom: 10px;
 }
@@ -395,14 +394,14 @@ details li{
     }
 
     aside {
+        width: 30%;
         float: right;
     }
 
     .tab-element {
-        flex-direction: row;
         justify-content: space-between;
-        align-items: baseline;
         flex-wrap: wrap;
+        width: 60%;
     }
 
     .other-centered {
@@ -416,5 +415,12 @@ details li{
     .nav-tab {
         font-size: 1.3rem;
     }
+
+    /* .active{
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        gap: 15px;
+    } */
 
 }

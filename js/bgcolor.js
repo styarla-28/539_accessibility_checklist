@@ -1,4 +1,4 @@
-const colors = ['#feffb1', '#c1ffb1', '#b1fbff', '#ffe2b1', '#fab1ff', '#ddb1ff'];
+const colors = ['#c1ffb1', '#b1fbff', '#ffe2b1', '#fab1ff', '#ddb1ff'];
 
 function getRandomColor() {
     const randomIndex = Math.floor(Math.random() * colors.length);
