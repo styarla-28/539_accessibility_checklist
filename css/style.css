@@ -27,7 +27,7 @@ section {
 }
 
 .hero-section {
-    max-height: 200vh;
+    min-height: 60vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -373,6 +373,10 @@ details li {
     margin-bottom: 10px;
 }
 
+img {
+    width: 75%;
+    height: 75%;
+}
 
 .other-centered p {
     font-size: 1rem;
@@ -399,6 +403,10 @@ details li {
         margin: 0 30%;
     }
 
+    .hero-section{
+        flex-direction: row-reverse;
+    }
+
     footer ul {
         justify-content: center;
     }
@@ -410,6 +418,10 @@ details li {
     aside {
         width: 30%;
         float: right;
+    }
+
+    img{
+        display: none;
     }
 
     .tab-element {
@@ -433,6 +445,11 @@ details li {
 
     .other-element{
         width: 60%;
+    }
+
+    summary:focus{
+        background-color: #979797;
+        color: white
     }
 
 }
