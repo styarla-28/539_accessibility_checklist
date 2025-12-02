@@ -24,9 +24,11 @@ section {
     display: flex;
     flex-direction: column;
     gap: 10px;
+    margin: 10px;
 }
 
 .hero-section {
+    flex-direction: column-reverse;
     min-height: 60vh;
     justify-content: center;
     align-items: center;
@@ -42,7 +44,7 @@ section {
 }
 
 .other-section {
-    min-height: 60vh;
+    min-height: 50vh;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -117,8 +119,7 @@ header img {
 
 h1 {
     color: #515151;
-    text-align: center;
-    font-size: 28px;
+    font-size: 32px;
     line-height: normal;
     font-weight: 400;
 }
@@ -131,8 +132,8 @@ h1 {
 .sticky-wrapper {
     display: flex;
     flex-direction: column;
-    gap: 30px;
     align-items: center;
+    justify-content: space-around;
 }
 
 .skip a:focus-visible {
@@ -171,7 +172,7 @@ h3 {
 }
 
 .sticky-note p {
-    font-size: 0.85em;
+    font-size: 0.95em;
     color: #333;
     line-height: 1.6;
     text-align: left;
@@ -374,8 +375,8 @@ details li {
 }
 
 img {
-    width: 75%;
-    height: 75%;
+    width: 50%;
+    height: 50%;
 }
 
 .other-centered p {
@@ -388,6 +389,15 @@ img {
     background-color: #fdff32;
     padding: 8px;
     font-style: oblique;
+}
+
+.highlighted-text p{
+    font-size: 18px;
+    font-style: normal;
+}
+
+.no-background{
+    background-color: transparent;
 }
 
 @media screen and (min-width: 1000px) {
@@ -420,9 +430,9 @@ img {
         float: right;
     }
 
-    img{
+    /* img{
         display: none;
-    }
+    } */
 
     .tab-element {
         justify-content: space-between;
