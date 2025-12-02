@@ -162,7 +162,6 @@ h1 {
     border: 1px solid #000;
     padding: 20px;
     position: relative;
-    cursor: pointer;
     transition: transform 0.2s, box-shadow 0.2s;
 }
 
@@ -435,6 +434,11 @@ img {
     background-color: transparent;
 }
 
+summary:focus {
+    background-color: #979797;
+    color: white
+}
+
 @media screen and (min-width: 1000px) {
     header {
         flex-direction: row;
@@ -490,11 +494,6 @@ img {
 
     .other-element {
         width: 60%;
-    }
-
-    summary:focus {
-        background-color: #979797;
-        color: white
     }
 
 }
