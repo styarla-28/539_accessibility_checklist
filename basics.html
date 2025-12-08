@@ -102,7 +102,41 @@
                     <h2>Manual Testing</h2>
                     <p>A human tester interacts with the website or application to find issues that software cannot.</p>
                 </div>
-        </section>
+        </section><br>
+        <section>
+            <h1>Automatic Testing Methods</h1>
+            <div class="sticky-wrapper">
+                <div class="half-note">
+                    <h2>Using WAVE Validator</h2>
+                    <p>WAVE (Web Accessibility Evaluation Tool) offers strong visual feedback, highlighting errors
+                        directly on the page with icons for easy identification, great for beginners</p>
+                </div>
+                <div class="half-note">
+                    <h2>Using aXe Validator</h2>
+                    <p>aXe (by Deque) integrates deeply into developer tools, offering technical details, WCAG links,
+                        and severity levels (critical, serious, etc.)</p>
+                </div>
+                <div class="half-note">
+                    <h2>Using W3 Code Validators</h2>
+                    <p>W3 Validators provide means to analyse your HTML or CSS code files to make sure that there are no errors in your code</p>
+                </div>
+        </section><br>
+        <section>
+            <h1>Manual Testing Methods</h1>
+            <div class="sticky-wrapper">
+                <div class="half-note">
+                    <h2>Color Contrast Validation</h2>
+                    <p>Validate the color contrast rations of your elements using tools like the WebAIM website. Try to make it with the minimum or enhanced ratio based on the level of accessibility in your website</p>
+                </div>
+                <div class="half-note">
+                    <h2>Screen Readers</h2>
+                    <p>Use screen readers like VoiceOver to be able to understand how users with vision impairments would be able to naviagte through your website. Putting yourself in their shoes makes your experience more inclusive</p>
+                </div>
+                <div class="half-note">
+                    <h2>Keyboard Naviagtion</h2>
+                    <p>Try to naviagte through your website using just your keyboard keys. Are you able to actually naviagate to where you need to go? Do you need improve any focus states of your elements?</p>
+                </div>
+        </section><br>
     </main>
     <footer>
         <div>
@@ -114,6 +148,7 @@
     </footer>
     <script src="js/bgcolor.js"></script>
     <script src="js/script.js"></script>
+    <script>document.getElementById("year").innerHTML = new Date().getFullYear();</script>
 </body>
 
 </html>
