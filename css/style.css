@@ -145,6 +145,10 @@ h1 {
     top: 25px;
 }
 
+.half-note:focus{
+    border:2px solid #000762
+}
+
 .sticky-note {
     min-height: 100px;
     background: #999;
